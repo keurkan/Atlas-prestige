@@ -69,7 +69,7 @@ export default function ContactForm() {
     {
       icon: MapPin,
       label: t('contact.info.location'),
-      value: 'Marrakesh • Casablanca • Rabat • Agadir',
+      value: 'Marrakesh',
       href: null,
     },
   ];

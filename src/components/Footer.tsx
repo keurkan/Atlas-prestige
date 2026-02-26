@@ -5,7 +5,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 export default function Footer() {
   const { t } = useLanguage();
 
-  const locations = ['Marrakesh', 'Casablanca', 'Rabat', 'Agadir'];
+  const locations = ['Marrakesh'];
 
   return (
     <footer className="bg-black text-white">

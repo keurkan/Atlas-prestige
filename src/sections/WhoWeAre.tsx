@@ -24,7 +24,7 @@ export default function WhoWeAre() {
           <ScrollReveal direction="right" delay={0.2}>
             <div className="relative aspect-[4/5] lg:aspect-[3/4]">
               <img
-                src="/images/IMG_3756.PNG"
+                src="/images/IMG_1943.PNG"
                 alt="Moroccan Interior"
                 className="w-full h-full object-cover"
               />
