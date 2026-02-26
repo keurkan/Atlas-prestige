@@ -7,7 +7,7 @@ export const translations = {
       contact: 'Contact',
       logo: 'ATLAS PRESTIGE'
     },
-    
+
     // Hero
     hero: {
       tagline: 'Experience Marrakesh',
@@ -15,13 +15,13 @@ export const translations = {
       subheadline: 'Bespoke concierge services for the discerning traveler',
       cta: 'Discover Our Services'
     },
-    
+
     // Who We Are
     whoWeAre: {
       heading: 'The Art of Bespoke Experience',
       body: 'Atlas Prestige is more than a concierge service—it\'s your gateway to the extraordinary. From the moment you arrive in Marrakesh, we transform every detail into an unforgettable moment. Our exclusive network of professionals ensures access to the city\'s most coveted experiences.'
     },
-    
+
     // Services
     services: {
       title: 'Our Services',
@@ -52,7 +52,7 @@ export const translations = {
         }
       }
     },
-    
+
     // Testimonials
     testimonials: {
       title: 'What They Say',
@@ -79,14 +79,14 @@ export const translations = {
         }
       ]
     },
-    
+
     // CTA
     cta: {
       heading: 'Let\'s Connect',
       subtext: 'For reservations or bespoke inquiries, our dedicated team is at your service 24/7.',
       button: 'Contact Us'
     },
-    
+
     // Footer
     footer: {
       tagline: 'Luxury Concierge & Bespoke Travel',
@@ -94,11 +94,11 @@ export const translations = {
       locations: 'Locations',
       socials: 'Socials',
       contact: 'Contact',
-      email: 'contact@atlasprestige.ma',
-      phone: '+212 6XX-XXXXXX',
+      email: 'Mohamednsitte@gmail.com',
+      phone: '+212 690493223',
       copyright: '2025 © ATLAS PRESTIGE'
     },
-    
+
     // About Page
     about: {
       hero: {
@@ -113,7 +113,7 @@ export const translations = {
         title: 'Meet the Team',
         members: {
           karim: {
-            name: 'Karim Benali',
+            name: 'Mohamed Nser',
             title: 'Founder & CEO'
           },
           laila: {
@@ -121,13 +121,13 @@ export const translations = {
             title: 'Head of Operations'
           },
           youssef: {
-            name: 'Youssef Alami',
+            name: 'Houssam beraich',
             title: 'VIP Relations Manager'
           }
         }
       }
     },
-    
+
     // Contact Page
     contact: {
       hero: {
@@ -147,7 +147,7 @@ export const translations = {
         submit: 'Submit'
       }
     },
-    
+
     // Language
     language: {
       select: 'Select Language',
@@ -155,7 +155,7 @@ export const translations = {
       fr: 'FR'
     }
   },
-  
+
   fr: {
     // Navigation
     nav: {
@@ -164,7 +164,7 @@ export const translations = {
       contact: 'Contact',
       logo: 'ATLAS PRESTIGE'
     },
-    
+
     // Hero
     hero: {
       tagline: 'Vivez Marrakech',
@@ -172,13 +172,13 @@ export const translations = {
       subheadline: 'Services de conciergerie sur mesure pour le voyageur exigeant',
       cta: 'Découvrez Nos Services'
     },
-    
+
     // Who We Are
     whoWeAre: {
       heading: 'L\'Art de l\'Expérience Sur Mesure',
       body: 'Atlas Prestige est bien plus qu\'un service de conciergerie—c\'est votre passerelle vers l\'extraordinaire. Dès votre arrivée à Marrakech, nous transformons chaque détail en un moment inoubliable. Notre réseau exclusif de professionnels garantit l\'accès aux expériences les plus prisées de la ville.'
     },
-    
+
     // Services
     services: {
       title: 'Nos Services',
@@ -209,7 +209,7 @@ export const translations = {
         }
       }
     },
-    
+
     // Testimonials
     testimonials: {
       title: 'Ce Qu\'ils Disent',
@@ -236,14 +236,14 @@ export const translations = {
         }
       ]
     },
-    
+
     // CTA
     cta: {
       heading: 'Restons en Contact',
       subtext: 'Pour les réservations ou demandes personnalisées, notre équipe dédiée est à votre service 24h/24 et 7j/7.',
       button: 'Contactez-Nous'
     },
-    
+
     // Footer
     footer: {
       tagline: 'Conciergerie de Luxe & Voyage Sur Mesure',
@@ -251,11 +251,11 @@ export const translations = {
       locations: 'Locations',
       socials: 'Réseaux',
       contact: 'Contact',
-      email: 'contact@atlasprestige.ma',
-      phone: '+212 6XX-XXXXXX',
+      email: 'Mohamednsitte@gmail.com',
+      phone: '+212 690493223',
       copyright: '2025 © ATLAS PRESTIGE'
     },
-    
+
     // About Page
     about: {
       hero: {
@@ -270,7 +270,7 @@ export const translations = {
         title: 'Rencontrez l\'Équipe',
         members: {
           karim: {
-            name: 'Karim Benali',
+            name: 'Mohamed Nser',
             title: 'Fondateur & CEO'
           },
           laila: {
@@ -278,13 +278,13 @@ export const translations = {
             title: 'Directrice des Opérations'
           },
           youssef: {
-            name: 'Youssef Alami',
+            name: 'Houssam beraich',
             title: 'Responsable Relations VIP'
           }
         }
       }
     },
-    
+
     // Contact Page
     contact: {
       hero: {
@@ -304,7 +304,7 @@ export const translations = {
         submit: 'Envoyer'
       }
     },
-    
+
     // Language
     language: {
       select: 'Choisir la Langue',
@@ -323,7 +323,7 @@ export function getTranslation(
 ): string | Array<{ quote: string; author: string; title: string }> | Record<string, { name: string; title: string }> {
   const keys = path.split('.');
   let value: unknown = translations[lang];
-  
+
   for (const key of keys) {
     if (value && typeof value === 'object' && key in value) {
       value = (value as Record<string, unknown>)[key];
@@ -331,6 +331,6 @@ export function getTranslation(
       return path;
     }
   }
-  
+
   return value as string | Array<{ quote: string; author: string; title: string }> | Record<string, { name: string; title: string }>;
 }

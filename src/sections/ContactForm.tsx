@@ -57,14 +57,14 @@ export default function ContactForm() {
     {
       icon: Mail,
       label: t('contact.info.email'),
-      value: 'contact@atlasprestige.ma',
-      href: 'mailto:contact@atlasprestige.ma',
+      value: 'Mohamednsitte@gmail.com',
+      href: 'mailto:Mohamednsitte@gmail.com',
     },
     {
       icon: Phone,
       label: t('contact.info.whatsapp'),
-      value: '+212 6XX-XXXXXX',
-      href: 'https://wa.me/212600000000',
+      value: '+212 690493223',
+      href: 'https://wa.me/212690493223',
     },
     {
       icon: MapPin,

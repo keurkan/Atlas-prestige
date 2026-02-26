@@ -20,7 +20,7 @@ export default function Team() {
   const teamMembers = useMemo<TeamMember[]>(() => {
     const members = translations[language].about.team.members;
     return [
-      { name: members.karim.name, title: members.karim.title, image: '/images/IMG_3711.PNG' },
+      { name: members.karim.name, title: members.karim.title, image: '/images/founder.PNG' },
       { name: members.laila.name, title: members.laila.title, image: '/images/IMG_3721.PNG' },
       { name: members.youssef.name, title: members.youssef.title, image: '/images/IMG_3748.PNG' },
     ];

@@ -22,11 +22,11 @@ export default function Services() {
   const services = useMemo<Service[]>(() => {
     const items = translations[language].services.items;
     return [
-      { title: items.fly.title, description: items.fly.description, image: '/images/IMG_3748.PNG' },
-      { title: items.drive.title, description: items.drive.description, image: '/images/IMG_3720.PNG' },
+      { title: items.fly.title, description: items.fly.description, image: '/images/atlas_fly.jpeg' },
+      { title: items.drive.title, description: items.drive.description, image: '/images/IMG_3839.PNG' },
       { title: items.stay.title, description: items.stay.description, image: '/images/IMG_3785.PNG' },
       { title: items.dine.title, description: items.dine.description, image: '/images/IMG_3760.PNG' },
-      { title: items.access.title, description: items.access.description, image: '/images/IMG_3783.PNG' },
+      { title: items.access.title, description: items.access.description, image: '/images/IMG_5218.PNG' },
       { title: items.concierge.title, description: items.concierge.description, image: '/images/IMG_3780.PNG' },
     ];
   }, [language]);
