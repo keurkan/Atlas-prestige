@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Link } from 'react-router-dom';
+
 import { useLanguage } from '@/contexts/LanguageContext';
 import { ChevronDown } from 'lucide-react';
 
@@ -34,7 +34,7 @@ export default function Hero() {
 
     // Content fade-in animation
     const tl = gsap.timeline({ delay: 0.3 });
-    
+
     tl.fromTo(
       content.querySelectorAll('.animate-item'),
       { y: 40, opacity: 0 },
@@ -79,21 +79,21 @@ export default function Hero() {
         <span className="animate-item text-xs md:text-sm uppercase tracking-[0.3em] mb-6">
           {t('hero.tagline')}
         </span>
-        
+
         <h1 className="animate-item font-serif text-4xl md:text-6xl lg:text-7xl max-w-4xl leading-tight mb-6">
           {t('hero.headline')}
         </h1>
-        
+
         <p className="animate-item text-base md:text-lg text-white/80 max-w-xl mb-10">
           {t('hero.subheadline')}
         </p>
-        
-        <Link
-          to="/#services"
+
+        <a
+          href="#services"
           className="animate-item btn-primary"
         >
           {t('hero.cta')}
-        </Link>
+        </a>
       </div>
 
       {/* Scroll Indicator */}

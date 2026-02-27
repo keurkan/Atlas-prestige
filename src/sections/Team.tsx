@@ -11,6 +11,7 @@ interface TeamMember {
   name: string;
   title: string;
   image: string;
+  isCircular?: boolean;
 }
 
 export default function Team() {
@@ -20,9 +21,10 @@ export default function Team() {
   const teamMembers = useMemo<TeamMember[]>(() => {
     const members = translations[language].about.team.members;
     return [
-      { name: members.karim.name, title: members.karim.title, image: '/images/founder.PNG' },
-      { name: members.laila.name, title: members.laila.title, image: '/images/IMG_3721.PNG' },
-      { name: members.youssef.name, title: members.youssef.title, image: '/images/IMG_3748.PNG' },
+      { name: members.karim.name, title: members.karim.title, image: '/images/founder2.jpeg?v=2', isCircular: true },
+      { name: members.laila.name, title: members.laila.title, image: '/images/laila.png', isCircular: true },
+      { name: members.youssef.name, title: members.youssef.title, image: '/images/houssam2.jpeg', isCircular: true },
+      { name: members.ismail.name, title: members.ismail.title, image: '/images/ismail.jpeg', isCircular: true },
     ];
   }, [language]);
 
@@ -63,11 +65,11 @@ export default function Team() {
 
         <div
           ref={gridRef}
-          className="grid grid-cols-1 md:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
         >
           {teamMembers.map((member) => (
             <div key={member.name} className="team-card text-center">
-              <div className="relative aspect-[3/4] mb-6 overflow-hidden">
+              <div className={`relative mb-6 overflow-hidden mx-auto ${member.isCircular ? 'aspect-square rounded-full w-3/4' : 'aspect-[3/4] w-full'}`}>
                 <img
                   src={member.image}
                   alt={member.name}

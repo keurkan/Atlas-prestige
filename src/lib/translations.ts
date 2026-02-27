@@ -32,7 +32,7 @@ export const translations = {
         },
         drive: {
           title: 'ATLAS/DRIVE',
-          description: 'Luxury Transport'
+          description: 'Luxury Cars'
         },
         stay: {
           title: 'ATLAS/STAY',
@@ -118,11 +118,15 @@ export const translations = {
           },
           laila: {
             name: 'Laila Moussaoui',
-            title: 'Head of Operations'
+            title: 'Community Manager'
           },
           youssef: {
             name: 'Houssam beraich',
-            title: 'VIP Relations Manager'
+            title: 'CO FOUNDER'
+          },
+          ismail: {
+            name: 'Ismail el alyani',
+            title: 'Social Media Manager'
           }
         }
       }
@@ -189,7 +193,7 @@ export const translations = {
         },
         drive: {
           title: 'ATLAS/DRIVE',
-          description: 'Transport de Luxe'
+          description: 'Voitures de Luxe'
         },
         stay: {
           title: 'ATLAS/STAY',
@@ -275,11 +279,15 @@ export const translations = {
           },
           laila: {
             name: 'Laila Moussaoui',
-            title: 'Directrice des Opérations'
+            title: 'Community Manager'
           },
           youssef: {
             name: 'Houssam beraich',
-            title: 'Responsable Relations VIP'
+            title: 'CO-FONDATEUR'
+          },
+          ismail: {
+            name: 'Ismail el alyani',
+            title: 'Responsable des Réseaux Sociaux'
           }
         }
       }
