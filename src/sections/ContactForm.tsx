@@ -44,7 +44,7 @@ export default function ContactForm() {
           Accept: 'application/json',
         },
         body: JSON.stringify({
-          access_key: '062eaf45-a398-43e5-8bf5-4f30b29c35af',
+          access_key: '0bc9f7c6-3b9a-4423-91d6-81f13404ed66',
           name: formData.name,
           email: formData.email,
           phone: formData.phone,
@@ -56,6 +56,7 @@ export default function ContactForm() {
       const result = await response.json();
       if (result.success) {
         setIsSubmitted(true);
+        window.alert("Your message has been sent successfully!");
         setFormData({
           name: '',
           email: '',
