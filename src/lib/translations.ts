@@ -49,6 +49,10 @@ export const translations = {
         concierge: {
           title: 'ATLAS/CONCIERGE',
           description: '24/7 Personal Assistant'
+        },
+        security: {
+          title: 'ATLAS/SECURITY',
+          description: 'Close Protection & Security'
         }
       }
     },
@@ -210,6 +214,10 @@ export const translations = {
         concierge: {
           title: 'ATLAS/CONCIERGE',
           description: 'Assistant Personnel 24/7'
+        },
+        security: {
+          title: 'ATLAS/SECURITY',
+          description: 'Protection Rapprochée & Sécurité'
         }
       }
     },
