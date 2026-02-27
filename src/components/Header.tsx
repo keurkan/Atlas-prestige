@@ -114,22 +114,22 @@ export default function Header() {
             </SheetTrigger>
             <SheetContent side="right" className="w-full sm:w-80 bg-white">
               <div className="flex flex-col h-full pt-12">
-                <nav className="flex flex-col gap-6">
-                  {navLinks.map((link) => (
+                <nav className="flex flex-col w-full">
+                  {navLinks.map((link, index) => (
                     <Link
                       key={link.path}
                       to={link.path}
                       onClick={() => setIsMobileMenuOpen(false)}
-                      className={`text-2xl font-serif ${isActive(link.path) ? 'text-black' : 'text-gray-500'
-                        }`}
+                      className={`text-2xl font-serif py-6 text-center w-full ${isActive(link.path) ? 'text-black' : 'text-gray-500'
+                        } ${index < navLinks.length - 1 ? 'border-b border-gray-100' : ''}`}
                     >
                       {link.label}
                     </Link>
                   ))}
                 </nav>
 
-                <div className="mt-auto pb-8">
-                  <div className="flex gap-4 mb-6">
+                <div className="mt-auto pb-8 flex flex-col items-center">
+                  <div className="flex justify-center gap-6 mb-8 w-full">
                     <button
                       onClick={() => setLanguage('en')}
                       className={`text-sm uppercase tracking-[0.15em] ${language === 'en' ? 'font-semibold text-black' : 'text-gray-400'
@@ -149,7 +149,7 @@ export default function Header() {
                     href="https://wa.me/212600000000"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-sm uppercase tracking-[0.15em]"
+                    className="flex justify-center items-center gap-2 text-sm uppercase tracking-[0.15em] w-full"
                   >
                     <Phone className="w-4 h-4" />
                     WhatsApp
