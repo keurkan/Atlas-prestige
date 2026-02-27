@@ -53,6 +53,10 @@ export const translations = {
         security: {
           title: 'ATLAS/SECURITY',
           description: 'Close Protection & Security'
+        },
+        activities: {
+          title: 'ATLAS/ACTIVITIES',
+          description: 'Curated Local Experiences'
         }
       }
     },
@@ -218,6 +222,10 @@ export const translations = {
         security: {
           title: 'ATLAS/SECURITY',
           description: 'Protection Rapprochée & Sécurité'
+        },
+        activities: {
+          title: 'ATLAS/ACTIVITIES',
+          description: 'Expériences Locales Sur Mesure'
         }
       }
     },

@@ -29,6 +29,7 @@ export default function Services() {
       { title: items.access.title, description: items.access.description, image: '/images/IMG_5218.PNG' },
       { title: items.concierge.title, description: items.concierge.description, image: '/images/IMG_3780.PNG' },
       { title: items.security.title, description: items.security.description, image: '/images/security2.jpg' },
+      { title: items.activities.title, description: items.activities.description, image: '/images/activities.jpg' },
     ];
   }, [language]);
 
