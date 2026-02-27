@@ -57,6 +57,10 @@ export const translations = {
         activities: {
           title: 'ATLAS/ACTIVITIES',
           description: 'Curated Local Experiences'
+        },
+        transport: {
+          title: 'ATLAS/TRANSPORT',
+          description: 'Private Chauffeur & Transfers'
         }
       }
     },
@@ -226,6 +230,10 @@ export const translations = {
         activities: {
           title: 'ATLAS/ACTIVITIES',
           description: 'Expériences Locales Sur Mesure'
+        },
+        transport: {
+          title: 'ATLAS/TRANSPORT',
+          description: 'Chauffeur Privé & Transferts'
         }
       }
     },

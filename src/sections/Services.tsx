@@ -30,6 +30,7 @@ export default function Services() {
       { title: items.concierge.title, description: items.concierge.description, image: '/images/IMG_3780.PNG' },
       { title: items.security.title, description: items.security.description, image: '/images/security2.jpg' },
       { title: items.activities.title, description: items.activities.description, image: '/images/activities.jpg' },
+      { title: items.transport.title, description: items.transport.description, image: '/images/transport.jpeg' },
     ];
   }, [language]);
 
