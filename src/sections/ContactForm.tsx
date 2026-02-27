@@ -36,21 +36,42 @@ export default function ContactForm() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          access_key: '062eaf45-a398-43e5-8bf5-4f30b29c35af',
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          city: formData.city,
+          message: formData.request, // maps request to message for email readability
+        }),
+      });
 
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      city: '',
-      request: '',
-    });
-
-    // Reset success message after 5 seconds
-    setTimeout(() => setIsSubmitted(false), 5000);
+      const result = await response.json();
+      if (result.success) {
+        setIsSubmitted(true);
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          city: '',
+          request: '',
+        });
+        setTimeout(() => setIsSubmitted(false), 5000);
+      } else {
+        console.error('Submission failed', result);
+      }
+    } catch (error) {
+      console.error('Form submission error', error);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactInfo: ContactInfoItem[] = [
