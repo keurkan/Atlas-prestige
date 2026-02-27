@@ -22,7 +22,7 @@ export default function Team() {
     const members = translations[language].about.team.members;
     return [
       { name: members.karim.name, title: members.karim.title, image: '/images/founder2.jpeg?v=2', isCircular: true },
-      { name: members.laila.name, title: members.laila.title, image: '/images/laila.png', isCircular: true },
+      { name: members.laila.name, title: members.laila.title, image: '/images/laila2.jpeg', isCircular: true },
       { name: members.youssef.name, title: members.youssef.title, image: '/images/houssam2.jpeg', isCircular: true },
       { name: members.ismail.name, title: members.ismail.title, image: '/images/ismail.jpeg', isCircular: true },
     ];
