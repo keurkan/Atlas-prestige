@@ -1,14 +1,17 @@
 import { useRef } from 'react';
 import { gsap } from 'gsap';
+import { useNavigate } from 'react-router-dom';
 
 interface ServiceCardProps {
   title: string;
   description: string;
   image: string;
   index: number;
+  link?: string;
 }
 
-export default function ServiceCard({ title, description, image, index }: ServiceCardProps) {
+export default function ServiceCard({ title, description, image, index, link }: ServiceCardProps) {
+  const navigate = useNavigate();
   const cardRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLImageElement>(null);
 
@@ -35,7 +38,8 @@ export default function ServiceCard({ title, description, image, index }: Servic
   return (
     <div
       ref={cardRef}
-      className="group relative aspect-[4/5] overflow-hidden cursor-pointer"
+      className="group relative aspect-[4/5] overflow-hidden cursor-pointer block"
+      onClick={() => link && navigate(link)}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       style={{ animationDelay: `${index * 100}ms` }}

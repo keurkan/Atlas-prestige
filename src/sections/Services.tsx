@@ -11,6 +11,7 @@ interface Service {
   title: string;
   description: string;
   image: string;
+  link?: string;
 }
 
 export default function Services() {
@@ -22,15 +23,15 @@ export default function Services() {
   const services = useMemo<Service[]>(() => {
     const items = translations[language].services.items;
     return [
-      { title: items.fly.title, description: items.fly.description, image: '/images/atlas_fly.jpeg' },
-      { title: items.security.title, description: items.security.description, image: '/images/security2.jpg' },
-      { title: items.stay.title, description: items.stay.description, image: '/images/IMG_3785.PNG' },
-      { title: items.activities.title, description: items.activities.description, image: '/images/activities.jpg' },
-      { title: items.access.title, description: items.access.description, image: '/images/IMG_5218.PNG' },
-      { title: items.concierge.title, description: items.concierge.description, image: '/images/IMG_3780.PNG' },
-      { title: items.drive.title, description: items.drive.description, image: '/images/IMG_3839.PNG' },
-      { title: items.dine.title, description: items.dine.description, image: '/images/IMG_3760.PNG' },
-      { title: items.transport.title, description: items.transport.description, image: '/images/transport.jpeg' },
+      { title: items.fly.title, description: items.fly.description, image: '/images/atlas_fly.jpeg', link: '/services/atlas-fly' },
+      { title: items.security.title, description: items.security.description, image: '/images/security2.jpg', link: '/services/atlas-security' },
+      { title: items.stay.title, description: items.stay.description, image: '/images/IMG_3785.PNG', link: '/services/atlas-stay' },
+      { title: items.activities.title, description: items.activities.description, image: '/images/activities.jpg', link: '/services/atlas-activities' },
+      { title: items.access.title, description: items.access.description, image: '/images/IMG_5218.PNG', link: '/services/atlas-access' },
+      { title: items.concierge.title, description: items.concierge.description, image: '/images/IMG_3780.PNG', link: '/services/atlas-concierge' },
+      { title: items.drive.title, description: items.drive.description, image: '/images/IMG_3839.PNG', link: '/services/atlas-drive' },
+      { title: items.dine.title, description: items.dine.description, image: '/images/IMG_3760.PNG', link: '/services/atlas-dine' },
+      { title: items.transport.title, description: items.transport.description, image: '/images/transport.jpeg', link: '/services/atlas-transport' },
     ];
   }, [language]);
 
@@ -83,7 +84,7 @@ export default function Services() {
     <section
       ref={sectionRef}
       id="services"
-      className="section-padding bg-white"
+      className="section-padding bg-background"
     >
       <div className="container-custom">
         {/* Section Title */}
@@ -106,6 +107,7 @@ export default function Services() {
                 description={service.description}
                 image={service.image}
                 index={index}
+                link={service.link}
               />
             </div>
           ))}

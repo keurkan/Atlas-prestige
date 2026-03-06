@@ -3,6 +3,7 @@ import { Mail, Phone, MapPin } from 'lucide-react';
 import ScrollReveal from '@/components/ScrollReveal';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Input } from '@/components/ui/input';
+
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 
@@ -97,7 +98,7 @@ export default function ContactForm() {
   ];
 
   return (
-    <section className="section-padding bg-white">
+    <section className="section-padding bg-background">
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
           {/* Contact Info */}
@@ -110,11 +111,11 @@ export default function ContactForm() {
               <div className="space-y-6">
                 {contactInfo.map((item) => (
                   <div key={item.label} className="flex items-start gap-4">
-                    <div className="p-3 bg-gray-100">
-                      <item.icon className="w-5 h-5" />
+                    <div className="p-3 bg-secondary shrink-0 rounded-sm">
+                      <item.icon className="w-5 h-5 text-foreground" />
                     </div>
-                    <div>
-                      <p className="text-xs uppercase tracking-[0.15em] text-gray-500 mb-1">
+                    <div className="flex-1 overflow-hidden">
+                      <p className="text-xs uppercase tracking-[0.15em] text-muted-foreground mb-1">
                         {item.label}
                       </p>
                       {item.href ? (
@@ -122,12 +123,12 @@ export default function ContactForm() {
                           href={item.href}
                           target={item.href.startsWith('http') ? '_blank' : undefined}
                           rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                          className="text-black hover:underline"
+                          className="text-foreground hover:underline break-all sm:break-normal"
                         >
                           {item.value}
                         </a>
                       ) : (
-                        <p className="text-black">{item.value}</p>
+                        <p className="text-foreground break-all sm:break-normal">{item.value}</p>
                       )}
                     </div>
                   </div>

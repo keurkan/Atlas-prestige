@@ -55,7 +55,7 @@ export default function Team() {
   }, []);
 
   return (
-    <section className="section-padding bg-gray-50">
+    <section className="section-padding bg-secondary">
       <div className="container-custom">
         <ScrollReveal>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-center mb-16">
@@ -77,7 +77,7 @@ export default function Team() {
                 />
               </div>
               <h3 className="font-serif text-xl mb-1">{member.name}</h3>
-              <p className="text-gray-500 text-sm uppercase tracking-[0.1em]">
+              <p className="text-muted-foreground text-sm uppercase tracking-[0.1em]">
                 {member.title}
               </p>
             </div>

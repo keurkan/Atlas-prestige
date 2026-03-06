@@ -102,9 +102,8 @@ export default function TestimonialCarousel({ testimonials }: TestimonialCarouse
                 setDirection(index > currentIndex ? 1 : -1);
                 setCurrentIndex(index);
               }}
-              className={`w-2 h-2 rounded-full transition-colors ${
-                index === currentIndex ? 'bg-white' : 'bg-white/30'
-              }`}
+              className={`w-2 h-2 rounded-full transition-colors ${index === currentIndex ? 'bg-primary' : 'bg-primary/30'
+                }`}
               aria-label={`Go to testimonial ${index + 1}`}
             />
           ))}
