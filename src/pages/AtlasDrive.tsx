@@ -44,10 +44,24 @@ export default function AtlasDrive() {
                             <h2 className="font-serif text-3xl mb-8 text-center">
                                 {t('atlasDrive.heading')}
                             </h2>
+
+                            <img
+                                src="/images/drive/IMG_5607.PNG"
+                                alt="Atlas Drive"
+                                className="w-full aspect-video object-cover rounded-lg mb-8 shadow-sm"
+                            />
+
                             <div className="space-y-6 text-muted-foreground font-light leading-relaxed">
                                 <p>
                                     {t('atlasDrive.paragraph1')}
                                 </p>
+
+                                <img
+                                    src="/images/drive/IMG_5747.JPG"
+                                    alt="Atlas Drive"
+                                    className="w-full aspect-video object-cover rounded-lg my-8 shadow-sm"
+                                />
+
                                 <p>
                                     {t('atlasDrive.paragraph2')}
                                 </p>

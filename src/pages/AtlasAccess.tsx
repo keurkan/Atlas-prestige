@@ -44,13 +44,28 @@ export default function AtlasAccess() {
                             <h2 className="font-serif text-3xl mb-8 text-center">
                                 {t('atlasAccess.heading')}
                             </h2>
+
+                            <img
+                                src="/images/access/IMG_5584.JPG"
+                                alt="Atlas Access"
+                                className="w-full aspect-video object-cover rounded-lg mb-8 shadow-sm"
+                            />
+
                             <div className="space-y-6 text-muted-foreground font-light leading-relaxed">
                                 <p>
                                     {t('atlasAccess.paragraph1')}
                                 </p>
+
+                                <img
+                                    src="/images/access/IMG_5579.PNG"
+                                    alt="Atlas Access"
+                                    className="w-full aspect-video object-cover rounded-lg my-8 shadow-sm"
+                                />
+
                                 <p>
                                     {t('atlasAccess.paragraph2')}
                                 </p>
+
                                 <div className="mt-12 p-8 bg-secondary rounded-lg">
                                     <h3 className="font-serif text-xl text-foreground mb-4">
                                         {t('atlasAccess.featuresTitle')}
