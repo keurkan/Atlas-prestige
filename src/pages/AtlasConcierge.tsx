@@ -44,10 +44,24 @@ export default function AtlasConcierge() {
                             <h2 className="font-serif text-3xl mb-8 text-center">
                                 {t('atlasConcierge.heading')}
                             </h2>
+
+                            <img
+                                src="/images/concierge/WhatsApp Image 2026-03-08 at 22.37.56.jpeg"
+                                alt="Atlas Concierge"
+                                className="w-full aspect-video object-cover rounded-lg mb-8 shadow-sm"
+                            />
+
                             <div className="space-y-6 text-muted-foreground font-light leading-relaxed">
                                 <p>
                                     {t('atlasConcierge.paragraph1')}
                                 </p>
+
+                                <img
+                                    src="/images/concierge/WhatsApp Image 2026-03-08 at 22.37.56 (1).jpeg"
+                                    alt="Atlas Concierge"
+                                    className="w-full aspect-video object-cover rounded-lg my-8 shadow-sm"
+                                />
+
                                 <p>
                                     {t('atlasConcierge.paragraph2')}
                                 </p>
