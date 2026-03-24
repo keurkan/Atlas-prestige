@@ -44,10 +44,24 @@ export default function AtlasTransport() {
                             <h2 className="font-serif text-3xl mb-8 text-center">
                                 {t('atlasTransport.heading')}
                             </h2>
+
+                            <img
+                                src="/images/transport/IMG_5977.PNG"
+                                alt="Atlas Transport"
+                                className="w-full aspect-video object-cover rounded-lg mb-8 shadow-sm"
+                            />
+
                             <div className="space-y-6 text-muted-foreground font-light leading-relaxed">
                                 <p>
                                     {t('atlasTransport.paragraph1')}
                                 </p>
+
+                                <img
+                                    src="/images/transport/IMG_5973.PNG"
+                                    alt="Atlas Transport"
+                                    className="w-full aspect-video object-cover rounded-lg my-8 shadow-sm"
+                                />
+
                                 <p>
                                     {t('atlasTransport.paragraph2')}
                                 </p>

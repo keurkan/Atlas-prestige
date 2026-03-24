@@ -46,7 +46,7 @@ export default function AtlasFly() {
                             </h2>
 
                             <img
-                                src="/images/atlas_fly_2.jpg"
+                                src="/images/fly/IMG_5974.PNG"
                                 alt="Luxury Private Jet Charter"
                                 className="w-full aspect-video object-cover rounded-lg mb-8 shadow-sm"
                             />
@@ -57,7 +57,7 @@ export default function AtlasFly() {
                                 </p>
 
                                 <img
-                                    src="/images/atlas_fly_3.webp"
+                                    src="/images/fly/IMG_5232.JPG"
                                     alt="Private Aviation Interior"
                                     className="w-full aspect-video object-cover rounded-lg my-8 shadow-sm"
                                 />

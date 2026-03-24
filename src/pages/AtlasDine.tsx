@@ -44,10 +44,24 @@ export default function AtlasDine() {
                             <h2 className="font-serif text-3xl mb-8 text-center">
                                 {t('atlasDine.heading')}
                             </h2>
+
+                            <img
+                                src="/images/dine/IMG_5849.JPG"
+                                alt="Atlas Dine"
+                                className="w-full aspect-video object-cover rounded-lg mb-8 shadow-sm"
+                            />
+
                             <div className="space-y-6 text-muted-foreground font-light leading-relaxed">
                                 <p>
                                     {t('atlasDine.paragraph1')}
                                 </p>
+
+                                <img
+                                    src="/images/dine/IMG_5848.JPG"
+                                    alt="Atlas Dine"
+                                    className="w-full aspect-video object-cover rounded-lg my-8 shadow-sm"
+                                />
+
                                 <p>
                                     {t('atlasDine.paragraph2')}
                                 </p>

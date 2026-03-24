@@ -46,7 +46,7 @@ export default function AtlasDrive() {
                             </h2>
 
                             <img
-                                src="/images/drive/IMG_5607.PNG"
+                                src="/images/drive/IMG_5896.JPG"
                                 alt="Atlas Drive"
                                 className="w-full aspect-video object-cover rounded-lg mb-8 shadow-sm"
                             />
@@ -57,7 +57,7 @@ export default function AtlasDrive() {
                                 </p>
 
                                 <img
-                                    src="/images/drive/IMG_5747.JPG"
+                                    src="/images/drive/IMG_5899.JPG"
                                     alt="Atlas Drive"
                                     className="w-full aspect-video object-cover rounded-lg my-8 shadow-sm"
                                 />
